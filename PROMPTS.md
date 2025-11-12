@@ -1,82 +1,36 @@
-# PROMPTS
+---------------------------------------
+Prompt 1: I have uplodaed 2 screenshots of UI
+this is the task below
+what i want from u, is how i can imrpove the design by making wow effect, like futuristic design, glass design, or something like that, not simple or old school UI. I want u to write in paragrapgh only for UI part, to make it WOW effect, would look at it and go wow
 
-## 2025-11-10
-Prompt:
-```
-"Please bring the project into full compliance with the YoPrint spec's setup rules and create the foundation for the app.
+I want u to write in paragrapgh only for UI part, to make it WOW effect, people would look at it and go wow, it looks ethereal 
 
+And i paste the task that was given.
 
+-----------------------------------------
+Prompt 2: I uploaded 3 screenshots of UI (and i explained what errors i see, what fixes needs to be done)
 
-Ensure there is exactly one default-exported App component in src/App.tsx. Remove any template remnants (logo, useState, App.css imports). App must render a Material UI AppBar titled 'Anime Search' that links to /, plus a content container that uses React Router to define two routes: / for a search page and /anime/:id for a details page.
+-i dont see Empty state and no-results handling with helpful messaging - "SEARCH ANIME" is overlaying with border of search bar. - "/" i dont understand why is this in search bar, it lights up when i type something, but what is the purpose of it - Design is not bad, but i dont see main home page that nice, u can enhance and add more feature and words, or some drawing, but i like the futurstic neon vibe, continue with adding more, more neon features - the top "ANIME SEARCH" button when i bring my mouse it shows that i can click it, but when i click it doesnt lead to anything. - The animes i dont like, i dont like how they r listed, the shape, it is oval shape right now as i see, and u cannot see full name of it. Make it proper shape, and the name of each anime, write it nicely, not connected to the image. And the scrolling as well, and make the sizes of anime images a bit smaller, so more can fit -add option without searching just to see popular animes, make small research on which top 20 animes, and list them down, when u scroll down the home page. The home page u have to make more wow effect, maybe more features, or more neon colors, or some shape. -when u resize the web page, the search but doesn't resize smoothly, it starts to overlay Look at the screenshots, write the improvements in paragraphs
 
+------------Output for Prompt 2----------- 
+Here’s how you can improve your current Anime Search App UI (based on the screenshots and your notes) — in paragraph form, focusing on visual polish, interaction, and futuristic detail while keeping everything cohesive and responsive:
 
+The overall futuristic neon concept is already strong, but the layout can be refined to make the app feel more premium and polished. First, fix the empty state so that when there are no search results, a clear, friendly message appears in the center — something like “No results found for your search. Try one of these popular anime titles!” followed by interactive, glowing pill buttons for quick searches such as Naruto, Bleach, or Spy × Family. Add a small animated mascot illustration or floating particles to keep it visually alive even when the screen is empty.
 
-In src/main.tsx, wrap the application with Redux Provider (using store), React Router's BrowserRouter, and Material UI's ThemeProvider + CssBaseline. Use a light theme. No class components or any types.
+Next, adjust the search bar positioning. The text “SEARCH ANIME” currently overlaps with the glass border — reduce its font size slightly, add top padding, or move it above the border as a floating label. The “/” icon at the end can be replaced with a more intuitive feature — for example, show a blinking cursor light or a “search instantly” indicator. If you want it to have meaning, use it to represent a keyboard shortcut hint (like / or Ctrl + K) to focus on the search bar, but it should have a tooltip explaining that.
 
+The header (“ANIME SEARCH”) should either act as a clickable home button or lose the hover effect. Right now, it misleads users into thinking it’s interactive, so link it back to the home page or remove the hover pointer. For the home page itself, enhance the visual depth by adding softly glowing abstract shapes, subtle gridlines, or animated streaks of light moving behind the search section — almost like a sci-fi dashboard background. Include a “Top 20 Popular Anime” section beneath the search bar, using a horizontal neon carousel with hover scaling and soft motion glow to make it look alive. You can populate it with trending titles like One Piece, Attack on Titan, Demon Slayer, and Jujutsu Kaisen.
 
+Improve the anime results layout by switching from the current oval crop to a clean rectangular or slightly rounded card style. Each card should show the anime poster clearly, with the title displayed below on a translucent glass strip instead of overlapping the image. Maintain consistent image ratios (e.g., 3:4) and shrink them slightly so more fit per row without scrolling too much. When hovering, add a subtle 3D tilt and glowing border to give that “holographic gallery” impression.
 
-Verify that the app runs strictly with npm install and npm run dev, and that the dev server is bound to port 4000 (update scripts and Vite config if needed). Do not introduce or require environment variables.
+For responsiveness, make sure the search bar and card grid resize gracefully — avoid overlapping by using flex or grid layouts with responsive breakpoints. The search bar should shrink smoothly while keeping inner padding consistent, and all glowing outlines should adapt dynamically. You can also enhance transitions: make the search bar expand when focused, dim the background slightly, and show a short tagline like “Find your next favorite anime” below it to add emotion and identity.
 
-
-
-Create strong TypeScript interfaces for the Jikan v4 API in src/types/jikan.ts covering list search results and full anime details (images, titles, synopsis, score, year, pagination, status, rating, duration, genres, trailer info).
-
-
-
-Create or update PROMPTS.md in the project root to log this prompt verbatim, and state that its purpose was to ensure routing/providers/typing/port-4000 compliance per the YoPrint spec.
-
-
-
-Return only the list of files you changed and a brief summary of each change."
+Finally, unify everything with motion and glow consistency — neon colors (cyan, magenta, violet gradients) should softly animate in the background or border strokes, but never overpower text readability. Consider small touches like a floating particle field behind the content, glowing section dividers, or pulsing buttons on hover. With these refinements, your UI will feel like a sleek, glassy anime discovery interface straight out of a futuristic OS — beautiful, responsive, and immersive.
 
 
-
-Why this matters: this locks in the critical requirements (npm-only, port 4000, no env vars, SPA routing shell) and gives us strict TypeScript types for clean state and components. It aligns to "Core Stack," "Functionality" container, and "Package Manager & Setup (CRITICAL)."
-```
-
-Purpose: ensure routing/providers/typing/port-4000 compliance per the YoPrint spec. Typographic quotes were converted to ASCII for repository compatibility.
-
-## 2025-11-10
-Prompt:
-```
-“Add robust state management and page behavior to satisfy the YoPrint functionality requirements.
+I use Chatgbt and Cursor, I mix up Normal, Thinking, Extended Thinking, Agent modes to get the best outcome.
+With magificent power of AI, i can manage completing any task, as long as u know the how to communicate with it, and get the most use of it.
+The task completion took 4-5 hour.
 
 
-
-Create a typed Redux Toolkit store (src/app/store.ts) that exports store, RootState, and AppDispatch.
-
-
-
-Implement a search slice that holds query, page, results, totalPages, loading, and optional error and lastUpdated. Add an async thunk to call Jikan’s search endpoint with q, page, limit=12, and sfw=true. The thunk must opt into cancellation via the provided AbortSignal, and on non-OK responses should surface a meaningful error. Add reducers to set the query (resetting page to 1), set the page, and clear errors. Register this slice in the store.
-
-
-
-Implement an anime slice that loads full details by id from the /anime/{id}/full endpoint, supports cancellation, and exposes current, loading, and optional error, plus a reducer to clear the current detail. Register this slice in the store.
-
-
-
-Build a reusable SearchBar component with an accessible label, a passive search icon, and a clear button that only appears when there is text.
-
-
-
-Build a reusable AnimeCard component that shows the best available cover image and title, and navigates to /anime/{mal_id} when clicked.
-
-
-
-Replace the search page so that it provides instant search without pressing Enter: mirror the input in local state, debounce API requests to 250ms, and cancel any in-flight request before dispatching a new one. On mount, fetch the first page for an empty query so the UI isn’t blank. Implement server-side pagination: when the page changes, cancel any in-flight request, update state, fetch the new page, and smooth-scroll to top. Show skeleton loaders during loading, a helpful empty state when there are no results, and a friendly error message (including a readable note for HTTP 429 rate limiting).
-
-
-
-Replace the detail page so it loads full anime info by id on mount, shows skeletons while loading, a clear error on failure, chips for score/episodes/year/status/rating and each genre, a synopsis, and a link to watch the trailer if present. On unmount, cancel any in-flight request and clear the detail from state.
-
-
-
-Update PROMPTS.md to log this prompt verbatim, mentioning that it implemented Redux state, instant search with 250ms debounce + cancellation, server-side pagination, detail loading, skeleton loaders, empty state, and error handling per the spec.
-
-
-
-Return only the list of files you created/changed and a short description of how each satisfies the YoPrint spec.”
-```
-
-Purpose: captured Redux, instant search with 250ms debounce plus cancellation, pagination, detail loading, skeletons, empty state, and error handling per YoPrint functionality requirements.
 
