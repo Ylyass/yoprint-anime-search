@@ -5,7 +5,7 @@ A two-page React + TypeScript + Vite application built with Redux Toolkit and th
 ---
 
 ## 🌐 Live Demo
-https://your-site-name.netlify.app
+https://https://yoprint-anime-search2025.netlify.app/
 > Replace with your actual Netlify URL after deploy.
 
 ---
