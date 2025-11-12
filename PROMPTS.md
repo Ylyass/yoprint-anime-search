@@ -27,8 +27,9 @@ For responsiveness, make sure the search bar and card grid resize gracefully —
 
 Finally, unify everything with motion and glow consistency — neon colors (cyan, magenta, violet gradients) should softly animate in the background or border strokes, but never overpower text readability. Consider small touches like a floating particle field behind the content, glowing section dividers, or pulsing buttons on hover. With these refinements, your UI will feel like a sleek, glassy anime discovery interface straight out of a futuristic OS — beautiful, responsive, and immersive.
 
-
+-------------------------
 I use Chatgbt and Cursor, I mix up Normal, Thinking, Extended Thinking, Agent modes to get the best outcome.
+I write prompt what type of design i want to see, i ask chatgbt to give me improved ideas, to refer to top existing app, make something unique ethereal, and the output i paste to cursor agent. Then i start making fixed by looking at the Web UI
 With magificent power of AI, i can manage completing any task, as long as u know the how to communicate with it, and get the most use of it.
 The task completion took 4-5 hour.
 
