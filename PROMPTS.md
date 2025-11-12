@@ -10,7 +10,14 @@ And i paste the task that was given.
 -----------------------------------------
 Prompt 2: I uploaded 3 screenshots of UI (and i explained what errors i see, what fixes needs to be done)
 
--i dont see Empty state and no-results handling with helpful messaging - "SEARCH ANIME" is overlaying with border of search bar. - "/" i dont understand why is this in search bar, it lights up when i type something, but what is the purpose of it - Design is not bad, but i dont see main home page that nice, u can enhance and add more feature and words, or some drawing, but i like the futurstic neon vibe, continue with adding more, more neon features - the top "ANIME SEARCH" button when i bring my mouse it shows that i can click it, but when i click it doesnt lead to anything. - The animes i dont like, i dont like how they r listed, the shape, it is oval shape right now as i see, and u cannot see full name of it. Make it proper shape, and the name of each anime, write it nicely, not connected to the image. And the scrolling as well, and make the sizes of anime images a bit smaller, so more can fit -add option without searching just to see popular animes, make small research on which top 20 animes, and list them down, when u scroll down the home page. The home page u have to make more wow effect, maybe more features, or more neon colors, or some shape. -when u resize the web page, the search but doesn't resize smoothly, it starts to overlay Look at the screenshots, write the improvements in paragraphs
+-i dont see Empty state and no-results handling with helpful messaging 
+- "SEARCH ANIME" is overlaying with border of search bar. 
+- "/" i dont understand why is this in search bar, it lights up when i type something, but what is the purpose of it 
+- Design is not bad, but i dont see main home page that nice, u can enhance and add more feature and words, or some drawing, but i like the futurstic neon vibe, continue with adding more, more neon features 
+- the top "ANIME SEARCH" button when i bring my mouse it shows that i can click it, but when i click it doesnt lead to anything. 
+- The animes i dont like, i dont like how they r listed, the shape, it is oval shape right now as i see, and u cannot see full name of it. Make it proper shape, and the name of each anime, write it nicely, not connected to the image. And the scrolling as well, and make the sizes of anime images a bit smaller, so more can fit 
+-add option without searching just to see popular animes, make small research on which top 20 animes, and list them down, when u scroll down the home page. The home page u have to make more wow effect, maybe more features, or more neon colors, or some shape. 
+-when u resize the web page, the search but doesn't resize smoothly, it starts to overlay Look at the screenshots, write the improvements in paragraphs
 
 ------------Output for Prompt 2----------- 
 Here’s how you can improve your current Anime Search App UI (based on the screenshots and your notes) — in paragraph form, focusing on visual polish, interaction, and futuristic detail while keeping everything cohesive and responsive:
